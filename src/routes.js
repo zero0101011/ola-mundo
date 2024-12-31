@@ -3,6 +3,7 @@ import Inicio from "./paginas/Inicio";
 import SobreMim from "./paginas/SobreMim";
 import Menu from "./Componentes/Menu";
 import RodaPe from "Componentes/RodaPe";
+import PaginaPadrao from "Componentes/PaginaPadrao";
 
 
 function AppRoutes() {
@@ -11,8 +12,14 @@ function AppRoutes() {
       <Menu/>
 
       <Routes>
+        <Route path="/" element={<PaginaPadrao/>} >
+
          <Route path="/" element={<Inicio />}/>
          <Route path="/sobremim" element={<SobreMim/>} />
+
+        </Route>
+
+
          <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
 

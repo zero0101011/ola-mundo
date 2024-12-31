@@ -1,4 +1,4 @@
-import Banner from "Componentes/Banner";
+
 import styles from "./inicio.module.css";
 
 import posts from "json/posts.json"
@@ -9,9 +9,9 @@ import Post from "Componentes/Post";
 
 export default function inicio () {
     return (
-        <main>
+       
             
-        <Banner/>
+       
             
         <ul className={styles.posts}>
 
@@ -23,7 +23,7 @@ export default function inicio () {
 
         </ul>
 
-        </main>
+      
 
       
 
