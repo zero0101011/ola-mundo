@@ -20,7 +20,7 @@ export default function PostModelo({ fotoCapa, titulo, children }) {
 
             </div>
 
-
+            
 
         </article>
     )
