@@ -4,6 +4,7 @@ import SobreMim from "./paginas/SobreMim";
 import Menu from "./Componentes/Menu";
 import RodaPe from "Componentes/RodaPe";
 import PaginaPadrao from "Componentes/PaginaPadrao";
+import Post from "paginas/Post";
 
 
 function AppRoutes() {
@@ -16,6 +17,7 @@ function AppRoutes() {
 
          <Route index element={<Inicio />}/>
          <Route path="sobremim" element={<SobreMim/>} />
+         <Route path="post/:id" element={<Post/>}/>
 
         </Route>
 
