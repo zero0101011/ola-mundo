@@ -1,9 +1,9 @@
 import PostModelo from "Componentes/PostModelo";
+import fotoCapa from "assets/sobre_mim_capa.png";
+import fotoSobreMim from "assets/sobre_mim_foto.png";
 import styles from "./SobreMim.module.css";
 
 export default function SobreMim() {
-    const fotoCapa = `/assets/posts/sobre_mim_capa.png`;
-    const fotoSobreMim = `/assets/posts/sobre_mim_foto.png`;
 
     return (
         <PostModelo fotoCapa={fotoCapa} titulo={"Sobre mim"}>

@@ -5,11 +5,15 @@ import Menu from "./Componentes/Menu";
 import RodaPe from "Componentes/RodaPe";
 import PaginaPadrao from "Componentes/PaginaPadrao";
 import Post from "paginas/Post";
+import NaoEncontrada from "Componentes/NaoEncontrada";
+import ScrollToTop from "Componentes/ScrollTop";
+
 
 
 function AppRoutes() {
   return (
     <BrowserRouter> 
+    <ScrollToTop/>
       <Menu/>
 
       <Routes>
@@ -17,12 +21,12 @@ function AppRoutes() {
 
          <Route index element={<Inicio />}/>
          <Route path="sobremim" element={<SobreMim/>} />
-         <Route path="post/:id" element={<Post/>}/>
+        
 
         </Route>
 
-
-         <Route path="*" element={<h1>Página não encontrada</h1>} />
+        <Route path="post/:id" element={<Post/>}/>
+         <Route path="*" element={<NaoEncontrada/>} />
       </Routes>
 
       <RodaPe/>
